@@ -14,6 +14,7 @@ class MyApp  extends StatelessWidget {
           backgroundColor: Colors.teal,
            body: SafeArea(
                 child:Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
                       height: 12.0,
@@ -47,9 +48,18 @@ class MyApp  extends StatelessWidget {
                           letterSpacing: 2.5,
                         ),
                       ),
+                    SizedBox(
+                      width: 150.0,
+                      height: 10.0,
+                      child: Divider(
+
+                        color: Colors.black,
+
+                      ),
+                    ),
 
                     Card(
-                      color: Colors.white,
+                      // color: Colors.white,
                       margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 10.0),
                       // padding: EdgeInsets.all(20.0),
                       child: Padding(
@@ -61,7 +71,7 @@ class MyApp  extends StatelessWidget {
                       ),
                     ),
                     Card(
-                      color: Colors.white,
+                      // color: Colors.white, // by default card is comes with white color. you can delete this color property here without problem
                       margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 10.0),
                       // padding: EdgeInsets.all(20.0),
                       child: Padding(
