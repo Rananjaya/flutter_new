@@ -13,41 +13,36 @@ class MyApp  extends StatelessWidget {
          home: Scaffold(
           backgroundColor: Colors.teal,
            body: SafeArea(
-                child:Row(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                child:Column(
                   children: [
-                    Container(
-                      child: Text("1 st"),
-                      width: 100.0,
-                      color: Colors.red,
+                    CircleAvatar(
+                       backgroundImage: AssetImage('images/7b0ICa20_400x400.jpg'),
+                      radius: 50.0,
                     ),
-                    Container(
-                      // width: 100.0,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 100.0,
-                          height: 100.0,
-                          color: Colors.yellow,
-                        ),
-                        Container(
-                          width: 100.0,
-                          height: 100.0,
-                          color: Colors.yellowAccent,
-                        ),
-                      ],
+                    SizedBox(
+                      height: 10.0,
                     ),
-                    ),
+                    Text('Rananjaya Bandara',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 25.0,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Pacifico",
 
-                    Container(
-                      child: Text("2 st"),
-                      width: 100.0,
-                      color: Colors.blue,
+
                     ),
+                    ),
+                    Text('Mobile Developer',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize:30.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "SourceSansPro"
+                        ),
+                      ),
+
                   ],
-                ) ,
+                ),
            ),
            // appBar: AppBar(
            //   title: Text('aaa'),
