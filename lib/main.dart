@@ -32,12 +32,13 @@ class MyApp  extends StatelessWidget {
 
                     ),
                     ),
-                    Text('Mobile Developer',
+                    Text('MOBILE DEVELOPER',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize:30.0,
                           fontWeight: FontWeight.bold,
-                          fontFamily: "SourceSansPro"
+                          fontFamily: "SourceSansPro",
+                          letterSpacing: 2.5,
                         ),
                       ),
 
